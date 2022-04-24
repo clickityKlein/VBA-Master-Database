@@ -8,4 +8,34 @@ The task was to create a database that housed information about each client, upd
 Each client will have an input tab that has general information (constant through the years of data) and variable information (likely to change through the years of data).
 
 Here is an example (Client1):
-![Cient Input Example](Pictures/ClientExample.png)
+![Client Input Example](Pictures/ClientExample.png)
+Please note that the name of the input tabs DO NOT need to be the same across all clients. But, do take note of the tab name.
+
+After the input page is setup, open the "Directory" tab in the "MDB Controls - Link" file (this is essentially the command center). Entered on this page is the client name, location to the excel file, and location to the input tab. Once again, the name of the input tabs DO NOT need to be the same across all clients. They just are in this example.
+
+Six mock clients are entered in the example, with the "ClientError" client being there for an error handling example.
+
+Example:
+![Directory Example](Pictures/Directory/Directory_Before.png)
+Don't worry about entering in the number of plan years, this is filled automatically from the client input tab when the program is run.
+![Directory Example](Pictures/Directory/Directory_After.png)
+
+The hard part is over! Just a few selections on the Controls page, and the automation will commence.
+
+## Updating the Database
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
