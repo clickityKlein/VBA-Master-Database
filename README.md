@@ -68,4 +68,6 @@ The database command center was designed to have a select few users who could op
 An additional step was taken to ensure integrity of the data by promoting the files to be opened in read-only mode (or copied to another location entirely):
 ![Output](Pictures/Output/PullHistory_OpenTry.png)
 
+Note that the date of the pull and the type of pull (Full vs. Sub) is addressed both of the historical record keeping places.
+
 The overall idea is to keep the command center private, but access to the database public, to ensure future analysis on the data doesn't jeopardize the original information. There should always be an accurate copy of the database this way, and analysis can take place without hesitation.
