@@ -49,20 +49,23 @@ Additionally, notice how the under the text "Directory Issues Found for the Foll
 
 Note: in the back-end of things, directoy errors are caught when the program fetches number of years of data. If there is an error, the number of years will simply be 0 (look back at the directory example above to see the years of data for ClientError).
 
+## The Output
+The data has been updated, but where is it?
+
+Once the update has finished, go to the OutputExternal tab to see all of the data in a single place:
+![Output](Pictures/Output/Output.png)
+
+Additionally, historical records of each pull is kept, with the corresponding data a click away:
+![Output](Pictures/Output/PullHistory_Tab.png)
 
 
+***IMPORTANT: Currently, the datafields in the input tab and the OutputExternal page need to be manually updated. This example uses 4 constant general datapoints, and 4 variable datapoints. Both tabs need to be updated manually, as well as a few ranges in the code (which are clearly marked). Most of the code doesn't have hard typed values, but there are a few functions which haven't been addressed.***
 
 
+The database command center was designed to have a select few users who could operate and update the "master" database. The intent being data updates are to be ran periodically, or upon request to prevent any accidental changes to the infrastructure of the command center. In leiu of this, each pull is also kept in a specified folder:
+![Output](Pictures/Output/PullHistory_Folder.png)
 
+An additional step was taken to ensure integrity of the data by promoting the files to be opened in read-only mode (or copied to another location entirely):
+![Output](Pictures/Output/PullHistory_OpenTry.png)
 
-
-
-
-
-
-
-
-
-
-
-
+The overall idea is to keep the command center private, but access to the database public, to ensure future analysis on the data doesn't jeopardize the original information. There should always be an accurate copy of the database this way, and analysis can take place without hesitation.
